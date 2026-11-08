@@ -1,0 +1,30 @@
+# Временные артефакты компиляции .NET
+**/bin/
+**/obj/
+[Bb]in/
+[Oo]bj/
+
+# Настройки сред разработки
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# Локальные конфигурации и секреты
+**/appsettings.Development.json
+*.secrets.json
+.env
+.env.*
+
+# Логи и локальные базы данных
+*.log
+logs/
+*.db
+*.sqlite
+*.sqlite3
+pgdata/
+
+# Системные файлы
+.DS_Store
+Thumbs.db

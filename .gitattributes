@@ -1,2 +1,16 @@
-# Auto detect text files and perform LF normalization
+# Автоматическое определение текстовых файлов и нормализация окончаний строк
 * text=auto
+
+# Исходный код C#, проекты и конфигурация решения
+*.cs text diff=csharp
+*.csproj text eol=lf
+*.sln text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+
+# Тяжёлые документы — хранение через Git LFS
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
